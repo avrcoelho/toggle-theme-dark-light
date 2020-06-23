@@ -4,7 +4,7 @@ import { Route, BrowserRouter, Switch } from "react-router-dom";
 import App from "./App";
 
 const Routes: React.FC = () => (
-  <BrowserRouter>
+  <BrowserRouter basename="dark-mode">
     <Switch>
       <Route path="/" exact component={App} />
       <Route path="/hello" exact component={() => <h1>Hello world</h1>} />
